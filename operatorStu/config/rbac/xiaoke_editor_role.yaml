@@ -1,0 +1,24 @@
+# permissions for end users to edit xiaokes.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: xiaoke-editor-role
+rules:
+- apiGroups:
+  - xiaoke.xiaoke.com
+  resources:
+  - xiaokes
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - xiaoke.xiaoke.com
+  resources:
+  - xiaokes/status
+  verbs:
+  - get

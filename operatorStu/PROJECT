@@ -1,0 +1,19 @@
+domain: xiaoke.com
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: operatorstu
+repo: github.com/xiaoke/app
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: xiaoke.com
+  group: xiaoke
+  kind: Xiaoke
+  path: github.com/xiaoke/app/api/v1
+  version: v1
+version: "3"

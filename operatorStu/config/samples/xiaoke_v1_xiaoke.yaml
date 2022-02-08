@@ -1,0 +1,7 @@
+apiVersion: xiaoke.xiaoke.com/v1
+kind: Xiaoke
+metadata:
+  name: xiaoke-sample
+spec:
+  # Add fields here
+  foo: bar
