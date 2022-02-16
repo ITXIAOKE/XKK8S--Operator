@@ -1,0 +1,20 @@
+domain: cncamp.io
+layout:
+- go.kubebuilder.io/v3
+projectName: demo-operator
+repo: github.com/cncamp/demo-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: cncamp.io
+  group: apps
+  kind: MyDaemonset
+  path: github.com/cncamp/demo-operator/api/v1beta1
+  version: v1beta1
+  webhooks:
+    defaulting: true
+    validation: true
+    webhookVersion: v1
+version: "3"
