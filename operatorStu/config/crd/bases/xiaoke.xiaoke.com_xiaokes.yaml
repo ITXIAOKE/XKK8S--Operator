@@ -36,13 +36,16 @@ spec:
           spec:
             description: XiaokeSpec defines the desired state of Xiaoke
             properties:
-              foo:
+              image:
                 description: Foo is an example field of Xiaoke. Edit xiaoke_types.go
                   to remove/update
                 type: string
             type: object
           status:
             description: XiaokeStatus defines the observed state of Xiaoke
+            properties:
+              availableReplicas:
+                type: integer
             type: object
         type: object
     served: true

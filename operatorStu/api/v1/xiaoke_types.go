@@ -29,11 +29,12 @@ type XiaokeSpec struct {
 	// Important: Run "make" to regenerate code after modifying this file
 
 	// Foo is an example field of Xiaoke. Edit xiaoke_types.go to remove/update
-	Foo string `json:"foo,omitempty"`
+	Image string `json:"image,omitempty"`
 }
 
 // XiaokeStatus defines the observed state of Xiaoke
 type XiaokeStatus struct {
+	AvailableReplicas int `json:"availableReplicas,omitempty"`
 	// INSERT ADDITIONAL STATUS FIELD - define observed state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
 }
